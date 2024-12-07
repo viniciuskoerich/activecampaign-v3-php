@@ -1,6 +1,6 @@
 {
-  "name": "mediatoolkit/activecampaign-v3-php",
-  "description": "PHP Wrapper for ActiveCampaign",
+  "name": "viniciuskoerich/activecampaign-v3-php",
+  "description": "PHP Wrapper for ActiveCampaign (Fork by viniciuskoerich)",
   "require": {
     "guzzlehttp/guzzle": "^7.0"
   },
@@ -10,8 +10,8 @@
   "license": "MIT",
   "authors": [
     {
-      "name": "Mediatoolkit",
-      "email": "info@mediatoolkit.com"
+      "name": "Vinicius Koerich",
+      "email": "seu-email@example.com"
     }
   ],
   "autoload": {
