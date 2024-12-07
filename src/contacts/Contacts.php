@@ -165,6 +165,42 @@ class Contacts extends Resource
         return $req->getBody()->getContents();
     }
 
+
+    public function addContactInList(int $idContact, int $idList)
+    {
+        $req = $this->client
+            ->getClient()
+            ->post('/api/3/contactLists', [
+                'json' => [
+                    'contactList' => [
+                        'contact' => $idContact,
+                        'list' => $idList,
+                        'status' => 1
+                    ]
+                ]
+            ]);
+
+        return $req->getBody()->getContents();
+    }
+
+//    {
+//        $req = $this->client
+//            ->getClient()
+//            ->post('/api/3/contactTags', [
+//                'json' => [
+//                    'contactTag' => [
+//                        'contact' => $id,
+//                        'tag' => $tag_id
+//                    ]
+//                ]
+//            ]);
+//
+//        return $req->getBody()->getContents();
+//    }
+
+
+
+
     /**
      * Remove a tag from a contact
      * @see https://developers.activecampaign.com/reference#delete-contact-tag
